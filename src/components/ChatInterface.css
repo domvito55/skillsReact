@@ -1,0 +1,105 @@
+/* --------------- Chat Window --------------- */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    border: none;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------- Chat header --------------- */
+.chat-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: sticky;
+    top: 0;
+    padding: 2vh 2vw;
+    background-color: #11AAEE;
+    color: white;
+}
+
+/* --------------- Chat body --------------- */
+.chat-body {
+    padding: 1vh 1vw;
+    flex: 1;
+    overflow-y: auto;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* I. Custom Scrollbar */
+.chat-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.chat-body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* II. Bubble group (bubble + timestamp) */
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-wrapper.sent {
+    align-items: flex-end;
+}
+
+/* II.a Bubble */
+.message-bubble {
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+    padding: 1vh 1vw;
+}
+
+.message-bubble.received {
+    background-color: rgba(17, 170, 238, 0.2);
+}
+
+.message-bubble img{
+    margin-right: 0.5vw;
+}
+
+.message-bubble.sent {
+    background-color: rgba(255, 125, 1, 0.2);
+}
+
+/* II.b timestamp */
+.timestamp {
+    font-size: 0.8em;
+    color: #888;
+    width: fit-content;
+}
+
+/* --------------- input area --------------- */
+.chat-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1vh 1vw;
+}
+
+/* I. textarea */
+.chat-footer textarea {
+    flex: 1;
+    border-radius: 15px;
+    resize: none;
+    border: 1px solid #dee2e6;
+    min-height: fit-content;
+    max-height: 30vh;
+    overflow-y: auto;
+}
