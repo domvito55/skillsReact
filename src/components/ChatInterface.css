@@ -62,6 +62,27 @@
     padding: 1vh 1vw;
 }
 
+.message-bubble h1 {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.message-bubble h2 {
+    font-size: 1.1em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.message-bubble h3,
+.message-bubble h4,
+.message-bubble h5,
+.message-bubble h6 {
+    font-size: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
 .message-bubble.received {
     background-color: rgba(17, 170, 238, 0.2);
 }
