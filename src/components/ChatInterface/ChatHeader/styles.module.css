@@ -1,0 +1,21 @@
+/**
+ * File: ChatHeader/styles.module.css
+ * Type: CSS Module
+ * Author: mathteixeira55
+ * Description: Styles for the ChatHeader component
+ * Date: 2024-07-13
+ * License: MIT
+ * Version: 1.0
+ */
+
+ @import '../../../styles/variables.css';
+
+.chatHeader {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: sticky;
+  top: 0;
+  padding: 2vh 2vw;
+  background-color: var(--skillsladder-blue);
+  color: white;
+}

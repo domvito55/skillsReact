@@ -1,0 +1,27 @@
+/**
+ * File: variables.css
+ * Type: CSS Variables
+ * Author: mathteixeira55
+ * Description: Global CSS variables for the SkillsLadder application
+ * Date: 2024-07-13
+ * License: MIT
+ * Version: 1.0
+ */
+
+:root {
+  /* Primary colors */
+  --skillsladder-blue: #11AAEE;
+  --skillsladder-orange: #FF7D01;
+
+  /* Message bubble background colors */
+  --bubble-blue-bg: rgba(17, 170, 238, 0.2);
+  --bubble-orange-bg: rgba(255, 125, 1, 0.2);
+
+  /* Text colors */
+  --faint-text-color: #888;
+
+  /* Other common variables */
+  --border-color: #dee2e6;
+  --scrollbar-color: #888;
+  --scrollbar-hover-color: #555;
+}

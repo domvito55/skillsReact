@@ -1,0 +1,32 @@
+/**
+ * File: ChatInterface/styles.module.css
+ * Type: CSS Module
+ * Author: mathteixeira55
+ * Description: Styles for the main ChatInterface component
+ * Date: 2024-07-13
+ * License: MIT
+ * Version: 1.0
+ */
+
+@import '../../styles/variables.css';
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  border: none;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffeeee;
+  border: 1px solid #ffcccc;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+

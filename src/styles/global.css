@@ -1,0 +1,20 @@
+/**
+ * File: global.css
+ * Type: Global CSS Styles
+ * Author: mathteixeira55
+ * Description: Global CSS styles and imports for the SkillsLadder application
+ * Date: 2024-07-13
+ * License: MIT
+ * Version: 1.0
+ */
+
+@import './variables.css';
+
+/* Add any global styles here */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ... other global styles ... */

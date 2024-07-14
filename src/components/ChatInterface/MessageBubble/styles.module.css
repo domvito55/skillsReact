@@ -1,0 +1,92 @@
+/**
+ * File: MessageBubble/styles.module.css
+ * Type: CSS Module
+ * Author: mathteixeira55
+ * Description: Styles for the MessageBubble component
+ * Date: 2024-07-13
+ * License: MIT
+ * Version: 1.0
+ */
+
+@import '../../../styles/variables.css';
+
+/* Message wrapper styles */
+.messageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.messageWrapper.sent {
+  align-items: flex-end;
+}
+
+/* Message bubble styles */
+.messageBubble {
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+  padding: 1vh 1vw;
+}
+
+/* Heading styles within message bubbles */
+.messageBubble h1 {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.messageBubble h2 {
+  font-size: 1.1em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.messageBubble h3,
+.messageBubble h4,
+.messageBubble h5,
+.messageBubble h6 {
+  font-size: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* Styles for received messages */
+.messageBubble.received {
+  background-color: var(--bubble-blue-bg);
+}
+
+/* Styles for sent messages */
+.messageBubble.sent {
+  background-color: var(--bubble-orange-bg);
+}
+
+/* Image styles within message bubbles */
+.messageBubble img {
+  margin-right: 0.5vw;
+}
+
+/* Timestamp styles */
+.timestamp {
+  font-size: 0.8em;
+  color: var(--faint-text-color);
+  width: fit-content;
+}
+
+/* Styles for the markdown content */
+.markdownContent {
+  display: inline;
+}
+
+.markdownContent p {
+  display: inline;
+}
+
+.markdownContent h1,
+.markdownContent h2,
+.markdownContent h3,
+.markdownContent h4,
+.markdownContent h5,
+.markdownContent h6 {
+  display: block;
+}

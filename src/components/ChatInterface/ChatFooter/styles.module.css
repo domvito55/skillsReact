@@ -1,0 +1,32 @@
+/**
+ * File: ChatFooter/styles.module.css
+ * Type: CSS Module
+ * Author: mathteixeira55
+ * Description: Styles for the ChatFooter component
+ * Date: 2024-07-13
+ * License: MIT
+ * Version: 1.0
+ */
+
+ @import '../../../styles/variables.css';
+
+.chatFooter {
+  position: sticky;
+  bottom: 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1vh 1vw;
+}
+
+.textarea {
+  flex: 1;
+  border-radius: 15px;
+  resize: none;
+  border: 1px solid var(--border-color);
+  min-height: fit-content;
+  max-height: 30vh;
+  overflow-y: auto;
+}
