@@ -46,7 +46,7 @@ const ChatFooter = ({
         value={input}
         rows={textareaRows}
         onChange={handleInputChange}
-        onKeyPress={(e) => {
+        onKeyDown={(e) => {
           if (e.key === "Enter" && !e.shiftKey) {
             e.preventDefault();
             handleSendMessage();

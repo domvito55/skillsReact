@@ -1,3 +1,12 @@
+/**
+ * File: LoadingMessage/index.jsx
+ * Type: React Component
+ * Author: mathteixeira55
+ * Description: Component for rendering a loading message bubble in the chat interface.
+ * Date: 2024-07-19
+ * License: MIT
+ * Version: 1.0
+ */
 import React from "react";
 
 const LoadingSymbol = () => {

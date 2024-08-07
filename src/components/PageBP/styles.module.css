@@ -1,0 +1,23 @@
+/**
+ * File: PageBP/styles.module.css
+ * Type: CSS Module
+ * Author: mathteixeira55
+ * Description: CSS Module for PageBP component
+ * Date: 2024-07-29
+ * License: MIT
+ * Version: 1.0
+ */
+ 
+ .formStyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 0 auto;
+    background-color: var(--text-blue-bg);
+}

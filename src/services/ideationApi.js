@@ -1,5 +1,5 @@
 /**
- * File: api.js
+ * File: PageBPAPI.js
  * Type: API Service
  * Author: mathteixeira55
  * Description: API service for chat functionality
@@ -23,6 +23,8 @@ export const sendMessage = async (message) => {
       headers: {
         "Content-Type": "application/json",
       },
+      // stringify will use the name "message" for the key, so the output will
+      //  be like { "message": "your message here" }
       body: JSON.stringify({ message }),
     });
 

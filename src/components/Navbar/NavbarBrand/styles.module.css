@@ -1,0 +1,13 @@
+/**
+ * File: Navbar/NavbarBrand/styles.module.css
+ * Type: CSS Module
+ * Author: mathteixeira55
+ * Description: CSS Module for NavbarBrand component
+ * Date: 2024-07-18
+ * License: MIT
+ * Version: 1.0
+ */
+
+.logo {
+  margin-right: 1%;
+}

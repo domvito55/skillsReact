@@ -1,5 +1,5 @@
 /**
- * File: App.jsx
+ * File: root.jsx
  * Type: JavaScript
  * Author: mathteixeira55
  * Description: Main application component that includes the Navbar and ChatInterface components.
@@ -9,16 +9,16 @@
  */
 
 import React from "react";
-import ChatInterface from "./components/ChatInterface";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
+import ChatInterface from "../components/ChatInterface";
 
-function App() {
+function Root() {
   return (
     <div>
-      <Navbar />
+      <Navbar tab="ideation"/>
       <ChatInterface />
     </div>
   );
 }
 
-export default App;
+export default Root;

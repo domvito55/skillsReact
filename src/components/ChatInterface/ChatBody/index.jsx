@@ -10,7 +10,7 @@
 
 import React from "react";
 import styles from "./styles.module.css";
-import MessageBubble from "../MessageBubble";
+import MessageBubble from "./MessageBubble";
 
 /**
  * ChatBody Component

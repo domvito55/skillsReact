@@ -8,12 +8,17 @@
  * Version: 1.0
  */
 
-import React, { useRef } from "react";
+// ### Imports ###
+import React from "react";
+
 import styles from "./styles.module.css";
+
 import ChatHeader from "./ChatHeader";
 import ChatBody from "./ChatBody";
 import ChatFooter from "./ChatFooter";
+
 import { useChatLogic } from "../../hooks/useChatLogic";
+// ### end Imports ###
 
 /**
  * ChatInterface Component
@@ -27,14 +32,24 @@ import { useChatLogic } from "../../hooks/useChatLogic";
  */
 const ChatInterface = () => {
   const {
+    // state - passed for the scroll to bottom useEffect
     messages,
+    // state - passed to handleInputChange and handleSendMessage
     input,
+    // state - passed to handleInputChange and handleSendMessage
     textareaRows,
+    // state - passed to handleSendMessage
     isLoading,
+    // state - passed to handleSendMessage (holds error message)
     error,
+    // ref - passed to scrollToBottom (reference to the chat body element
+    // the outter div that contains all messages)
     chatBodyRef,
+    // function - to be used by the ChatFooter component
     handleInputChange,
+    // function - to be used by the ChatFooter component
     handleSendMessage,
+    // function - to be used by the ChatFooter component
     generatePDF,
   } = useChatLogic();
 

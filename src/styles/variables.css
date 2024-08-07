@@ -14,11 +14,11 @@
   --skillsladder-orange: #FF7D01;
 
   /* Message bubble background colors */
-  --bubble-blue-bg: rgba(17, 170, 238, 0.2);
-  --bubble-orange-bg: rgba(255, 125, 1, 0.2);
+  --text-blue-bg: rgba(17, 170, 238, 0.2);
+  --text-orange-bg: rgba(255, 125, 1, 0.2);
 
   /* Text colors */
-  --faint-text-color: #888;
+  --text-faint-color: #888;
 
   /* Other common variables */
   --border-color: #dee2e6;

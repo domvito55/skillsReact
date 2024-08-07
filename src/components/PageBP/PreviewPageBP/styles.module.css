@@ -1,0 +1,16 @@
+/**
+ * File: PageBP/PreviewPageBP/styles.module.css
+ * Type: CSS Module
+ * Author: mathteixeira55
+ * Description: CSS Module for PreviewPageBP component
+ * Date: 2024-07-29
+ * License: MIT
+ * Version: 1.0
+ */
+ 
+ .max-width-a4 {
+  width: 100%;
+  max-width: 210mm;
+  /* or max-width: 8.27in; */
+  user-select: none;
+}

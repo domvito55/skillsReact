@@ -8,7 +8,7 @@
  * Version: 1.0
  */
 
-@import '../../../styles/variables.css';
+@import '../../../../styles/variables.css';
 
 /* Message wrapper styles */
 .messageWrapper {
@@ -53,12 +53,12 @@
 
 /* Styles for received messages */
 .messageBubble.received {
-  background-color: var(--bubble-blue-bg);
+  background-color: var(--text-blue-bg);
 }
 
 /* Styles for sent messages */
 .messageBubble.sent {
-  background-color: var(--bubble-orange-bg);
+  background-color: var(--text-orange-bg);
 }
 
 /* Image styles within message bubbles */
@@ -69,7 +69,7 @@
 /* Timestamp styles */
 .timestamp {
   font-size: 0.8em;
-  color: var(--faint-text-color);
+  color: var(--text-faint-color);
   width: fit-content;
 }
 

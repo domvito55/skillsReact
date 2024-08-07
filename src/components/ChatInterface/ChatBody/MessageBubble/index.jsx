@@ -12,9 +12,9 @@ import React from "react";
 import styles from "./styles.module.css";
 import ReactMarkdown from "react-markdown";
 import rehypeExternalLinks from "rehype-external-links";
-import LoadingSymbol from "../../LoadingSymbol/LoadingSymbol";
-import logo from "../../../assets/skillsladder-logo.png";
-import userIcon from "../../../assets/user-icon.png";
+import LoadingMessage from "./LoadingMessage";
+import logo from "../../../../assets/skillsladder-logo.png";
+import userIcon from "../../../../assets/user-icon.png";
 
 /**
  * MessageBubble Component
@@ -43,47 +43,37 @@ const MessageBubble = ({ text, sender, timestamp }) => {
           alt={isSent ? "User Icon" : "skillsladder Icon"}
           width="24"
           height="24"
-          className="d-inline-block align-text-top rounded-circle"
+          className="d-inline-block align-text-middle rounded-circle"
         />
         {/* Render the message content */}
-        {text !== "..." ? (
-          isSent ? (
-            // For sent messages, render plain text
-            text
-          ) : (
-            // For received messages, use ReactMarkdown to render formatted text
-            <ReactMarkdown
-              className={styles.markdownContent}
-              rehypePlugins={[
-                [
-                  rehypeExternalLinks,
-                  {
-                    target: "_blank",
-                    rel: ["nofollow", "noopener", "noreferrer"],
-                  },
-                ],
-              ]}
-              allowedElements={[
-                "p",
-                "h1",
-                "h2",
-                "h3",
-                "h4",
-                "h5",
-                "h6",
-                "ul",
-                "ol",
-                "li",
-                "strong",
-                "em",
-              ]}
-            >
-              {text}
-            </ReactMarkdown>
-          )
+        {isSent ? (
+          // For sent messages, render plain text
+          text
+        ) : text !== "..." ? (
+          // For received messages, use ReactMarkdown to render formatted text
+          <ReactMarkdown
+            className={styles.markdownContent}
+            rehypePlugins={[
+              [
+                rehypeExternalLinks,
+                {
+                  target: "_blank",
+                  rel: ["nofollow", "noopener", "noreferrer"],
+                },
+              ],
+            ]}
+            allowedElements={[
+              "p",
+              "h1", "h2", "h3", "h4", "h5", "h6",
+              "ul", "ol", "li",
+              "strong", "em",
+            ]}
+          >
+            {text}
+          </ReactMarkdown>
         ) : (
           // If the message is "...", render the loading symbol
-          <LoadingSymbol />
+          <LoadingMessage />
         )}
       </div>
       {/* Display the timestamp for the message */}
