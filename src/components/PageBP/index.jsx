@@ -12,7 +12,7 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
 
-import { usePageBPLogic } from "../../hooks/usePageBPLogic";
+import { usePageBPForm } from "../../hooks/usePageBPForm";
 import { fillForm } from "../../utils/fillForm";
 
 import styles from "./styles.module.css";
@@ -22,7 +22,7 @@ import sendIcon from "../../assets/send-icon.png";
 export default function PageBP() {
   const { setStreamData, setError } = useOutletContext();
 
-  const { handleSubmit } = usePageBPLogic({
+  const { handleSubmit } = usePageBPForm({
     setStreamData,
     setError,
   });

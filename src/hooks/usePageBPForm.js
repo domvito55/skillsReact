@@ -18,9 +18,9 @@ import { generateBusinessPlan } from "../services/pageBPAPI";
 /**
  * Custom hook to handle the logic for the PageBP component.
  * @param {Object} param0 - Object containing the setStreamData and setError functions.
- * @returns {Object} - Object containing the handleSubmit and generateDoc functions.
+ * @returns {Object} - Object containing the handleSubmit
  */
-export function usePageBPLogic({ setStreamData, setError }) {
+export function usePageBPForm({ setStreamData, setError }) {
   const navigate = useNavigate();
 
   /**
