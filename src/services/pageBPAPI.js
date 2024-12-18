@@ -7,7 +7,7 @@
  * License: MIT
  * Version: 1.0
  */ 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "http://skillsdemo.us-east-1.elasticbeanstalk.com/api";
 
 export async function generateBusinessPlan(businessInfo) {
   return fetch(`${API_BASE_URL}/pagebp`, {

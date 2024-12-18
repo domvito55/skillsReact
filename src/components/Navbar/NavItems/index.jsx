@@ -13,8 +13,8 @@ import React from "react";
 const navItems = [
   { name: "Ideation", href: "/", id: "ideation" },
   { name: "1-Page BP", href: "/pageBP", id: "PageBP" },
-  { name: "Full BP", href: "#", id: "fullBP" },
-  { name: "Education", href: "#", id: "education" },
+  // { name: "Full BP", href: "#", id: "fullBP" },
+  // { name: "Education", href: "#", id: "education" },
 ];
 
 const NavItems = ({ currentTab }) => (
